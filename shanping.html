@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <script src="js/swiper.animate1.0.2.min (1).js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/shanping.css">
+</head>
+<script>
+    function resize(origianSize,type){
+        var type=type||"x";
+        if(type=="x"){
+        var clientw=document.documentElement.clientWidth;
+        var html=document.querySelector("html");
+        html.style.fontSize=clientw/origianSize*100+"px";
+        }else if(type=="y"){
+            var clienth=document.documentElement.clientHeight;
+            var html=document.querySelector("html");
+            html.style.fontSize=clienth/origianSize*100+"px";
+        }
+    }
+    window.onload= function(){
+        resize(750,"y");
+    }
+</script>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+           <div class="circle ani"swiper-animate-effect="rotateIn" swiper-animate-duration="0.6s" swiper-animate-delay="0.3s"></div>
+            <div class="zi ani"swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">S-M</div>
+            <div class="wenzi ani"swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">用心聆听，属于你的声音</div>
+        </div>
+        <div class="swiper-slide">
+            <div class="people ani"swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+            <div class="leftzi ani"swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.9s" swiper-animate-delay="0.3s">享受</div>
+            <div class="rightzi ani"swiper-animate-effect="bounceInRight" swiper-animate-duration="0.9s" swiper-animate-delay="0.3s">-&nbsp好音乐</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="erji ani"swiper-animate-effect="rotateIn" swiper-animate-duration="0.9s" swiper-animate-delay="0.3s"></div>
+            <div class="erzi ani"swiper-animate-effect="flip" swiper-animate-duration="0.9s" swiper-animate-delay="0.3s">audioline</div>
+            <div class="deng ani"swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.9s" swiper-animate-delay="0.3s">
+                <p>马上体验</p>
+            </div>
+        </div>
+</div>
+    <div class="swiper-pagination"></div>
+    </div>
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container',{
+            pagination: '.swiper-pagination',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper);
+            swiperAnimate(swiper);
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper);
+        }
+    });
+</script>
+</html>

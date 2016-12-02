@@ -1,0 +1,150 @@
+body,html{
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+/*.swiper-wrapper{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+    background: #1D1D27;
+}
+.swiper-pagination-bullet {
+    width:15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    /*background: #000;*/
+    border:1px solid #fff;
+    /*opacity: .2;*/
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 14px;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background:#fff;
+    opacity:0.2;
+}
+
+/*第一屏*/
+.swiper-slide:nth-child(1){
+    position: relative;
+}
+.swiper-slide .circle{
+    width: 2.08rem;
+    height: 2rem;
+    background: red;
+    margin-left:1.1rem;
+    margin-top:1rem;
+    background: url("../img/1_03.png") no-repeat;
+    background-size: 2rem 2rem;
+}
+.swiper-slide .zi{
+    position: absolute;
+    width: 1.3rem;
+    height:0.7rem;
+    font-size: 0.5rem;
+    color:#fff;
+    left:1.6rem;
+     top:1.7rem;
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, Verdana;
+}
+.swiper-slide .wenzi{
+    position: absolute;
+    width:2.5rem;
+    height:0.5rem;
+    left:1rem;
+    top:4.5rem;
+    font-size:0.22rem;
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, Verdana;
+    color:#fff;
+    line-height: 0.5rem;
+    text-align: center;
+}
+/*第二屏*/
+.swiper-slide:nth-child(2){
+    position: relative;
+}
+
+.people{
+    width: 5rem;
+    height: 4rem;
+    position: absolute;
+    left:0.2rem;
+    top:1.5rem;
+    background: url("../img/2_03.png") no-repeat;
+    background-size:4rem 3rem;
+}
+.leftzi{
+    position: absolute;
+    left:0.8rem;
+    font-size:0.3rem;
+    color:#fff;
+    font-family: "微软雅黑";
+    bottom:2rem;
+}
+.rightzi{
+    position: absolute;
+    left:1.9rem;
+    font-size:0.5rem;
+    color:#fff;
+    font-family: "微软雅黑";
+    bottom:1.9rem;
+}
+/*第三屏*/
+.swiper-slide:nth-child(3){
+    position: relative;
+}
+.erji{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: red;
+    left:1.1rem;
+    top:1.3rem;
+    background: url("../img/3_03.png") no-repeat;
+    background-size: 2.1rem 2rem;
+
+}
+.erzi{
+    position: absolute;
+    color:#fff;
+    font-size: 0.25rem;
+    left:1.6rem;
+    top:3.5rem;
+   font-family: "Microsoft YaHei", "微软雅黑", Arial, Verdana;
+}
+.deng{
+    position: absolute;
+    width: 1.7rem;
+    height:0.4rem;
+    left:1.3rem;
+    bottom:2rem;
+    border:1px solid #fff;
+    opacity:0.7;
+    border-radius: 15px;
+}
+.deng p{
+    display: block;
+    font-size: 0.2rem;
+    color:#fff;
+    line-height: 0.4rem;
+    margin-left: 0.4rem;
+    margin-top:-0.0rem;
+    font-family: "微软雅黑";
+}
+
